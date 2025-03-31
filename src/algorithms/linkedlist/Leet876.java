@@ -2,7 +2,7 @@ package algorithms.linkedlist;
 
 public class Leet876 {
 	public ListNode middleNode(ListNode head) {
-		if (head == null && head.next == null) {
+		if (head == null || head.next == null) {
 			return head;
 		}
 		ListNode slow = head;
